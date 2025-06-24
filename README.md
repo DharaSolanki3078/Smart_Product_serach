@@ -1,5 +1,7 @@
 # 🛒 Smart Product Recommendation System
 
+## [Demo link](https://drive.google.com/file/d/16DA5JMfoMGaJRDVsTaX5lFdZAYKC01rz/view?usp=sharing)
+
 This project is an AI-powered product recommendation system that takes natural language queries from users and returns the most relevant products using:
 
 - 🌐 **FastAPI** backend  
