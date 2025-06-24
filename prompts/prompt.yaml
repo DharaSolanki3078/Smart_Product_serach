@@ -1,0 +1,22 @@
+_type: prompt
+
+input_variables:
+  - query
+template: >-
+    You are a helpful AI assistant that converts natural language product queries into structured JSON for a vector database search.
+
+    Extract the following from the user's query:
+    - `product_name`: The main product being searched for.
+    - `category`: Optional category of the product (e.g., shoes, electronics).
+    - `description`: Optional descriptive features or attributes (e.g., “with good reviews”, “latest model”).
+    - `filters`: A list of structured filters derived from the query that can be applied to metadata fields.
+
+    Filters should follow this format:
+    - `field`: One of "price", "rating_score", "rating_count", "category", or "product_id"
+    - `op`: One of "$eq", "$ne", "$gt", "$gte", "$lt", "$lte" (as per ChromaDB filtering syntax)
+    - `value`: A number (for price/ratings) or string (for category/product_id)
+
+
+    Now parse the following query and return strictly valid JSON:
+
+    "{query}"

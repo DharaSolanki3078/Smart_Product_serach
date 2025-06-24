@@ -1,0 +1,10 @@
+requests
+langchain
+langchain-core
+langchain-community
+langchain-groq
+cohere
+sentence-transformers
+fastapi
+uvicorn
+langchain-cohere
