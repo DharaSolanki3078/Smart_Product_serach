@@ -4,23 +4,51 @@
 
 This project is an AI-powered product recommendation system that takes natural language queries from users and returns the most relevant products using:
 
-- 🌐 **FastAPI** backend  
-- 🧠 **LangChain + Groq LLM** for query interpretation  
-- 🔎 **Chroma Vector DB** for semantic + metadata filtering  
-- 💻 A simple **HTML/CSS/JS frontend** to interact with the system  
+- **FastAPI** backend  
+- **LLM** for query interpretation  
+- **Chroma Vector DB** for semantic + metadata filtering  
+- A simple **HTML/CSS/JS frontend** to interact with the system  
+
+
+## Chosen AI Feature
+
+### Option A – Smart Product Search
+
+This project implements a Smart Product Search system that allows users to search for products using natural language queries like:
+
+> “Show me women's wear under $10 with good reviews.”
+
+The system intelligently interprets the query, extracts intent and filters, and returns semantically relevant product recommendations using vector similarity and metadata filtering.
+
+---
+
+## Tools & Libraries Used
+
+| Category         | Tool/Library                        |
+|------------------|-------------------------------------|
+| LLM              | llama3.3-70B from Groq  (via LangChain)                |
+| Orchestration    | LangChain                           |
+| Backend          | FastAPI                             |
+| Vector Database  | ChromaDB                            |
+| Embeddings       | Cohere     |
+| Frontend         | HTML, CSS, JavaScript               |
+| Product Data     | [FakeStoreAPI](https://fakestoreapi.com/) |
+
+---
+
 
 # Example search queries:
 1. Show me women's wear under $10 with good reviews
 2. Show me men's wear under $75 with good reviews
-3. jewelery
-4. jewelery rating above 3
-5. men's clothing under 500$
-6. show me men's clothing under 500$ and rating above 3
+3. jewelry
+4. jewelry rating above 3
+5. Men's clothing under 500$
+6. Show me men's clothing under 500$ and rating above 3
 ---
 
-# ⚙️ Project Setup Instructions
+# Project Setup Instructions
 
-## 🔧 Backend Setup (FastAPI + LangChain + ChromaDB)
+## Backend Setup (FastAPI + LangChain + ChromaDB)
 
 ```bash
 # 1. Navigate to the backend directory
@@ -44,7 +72,5 @@ python main.py
 cd Frontend
 
 #2. run index.html in chrome
-
-
 
 
