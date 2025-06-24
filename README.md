@@ -9,6 +9,13 @@ This project is an AI-powered product recommendation system that takes natural l
 - 🔎 **Chroma Vector DB** for semantic + metadata filtering  
 - 💻 A simple **HTML/CSS/JS frontend** to interact with the system  
 
+# Example search queries:
+1. Show me women's wear under $10 with good reviews
+2. Show me men's wear under $75 with good reviews
+3. jewelery
+4. jewelery rating above 3
+5. men's clothing under 500$
+6. show me men's clothing under 500$ and rating above 3
 ---
 
 # ⚙️ Project Setup Instructions
@@ -33,9 +40,11 @@ python vectordb/create_db.py
 python main.py
 
 ## 💻 Frontend Setup & Run Instructions
-
-```bash
 # 1. Navigate to the frontend directory
 cd Frontend
 
 #2. run index.html in chrome
+
+
+
+
