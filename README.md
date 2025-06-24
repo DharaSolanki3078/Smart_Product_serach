@@ -36,6 +36,13 @@ The system intelligently interprets the query, extracts intent and filters, and 
 
 ---
 
+## Assumptions
+
+- Product data is fetched from a static source (`https://fakestoreapi.com/products`) and embedded once during ingestion.
+- Search is performed only on the product data available from [`https://fakestoreapi.com/products`](https://fakestoreapi.com/products).
+- User queries are assumed to be in English
+  
+---
 
 # Example search queries:
 1. Show me women's wear under $10 with good reviews
