@@ -24,7 +24,10 @@ source venv/bin/activate  # or venv\Scripts\activate on Windows
 # 3. Install Python dependencies
 pip install -r requirements.txt
 
-# 4. Start the FastAPI server
+#4. Create vector db
+python vectordb/create_db.py
+
+# 5. Start the FastAPI server
 python main.py
 
 ## 💻 Frontend Setup & Run Instructions
